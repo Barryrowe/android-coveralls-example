@@ -41,5 +41,6 @@ jobs:
     # Make sure we're not breaking things
     - name: "Test"
       script: ./gradlew clean test
-    - name: "Run Test Coverage Report"
-      script: ./gradlew jacocoTestReport coveralls
+
+after_success:
+    - ./gradlew jacocoTestReport coveralls
