@@ -31,7 +31,7 @@ cache:
 
 stages:
   - name: lint_and_test
-  
+    
 jobs:
   include:
     # Make sure we're not being sloppy
